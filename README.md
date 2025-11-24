@@ -29,12 +29,8 @@ Repository for the official **Black Void** website.
 
 ### Editions
 - [XFCE](https://github.com/blackvoidlinux/bv-website/blob/main/editions/xfce.md)
-- [KDE](https://github.com/blackvoidlinux/bv-website/blob/main/editions/kde.md)
-- [GNOME](https://github.com/blackvoidlinux/bv-website/blob/main/editions/gnome.md)
-- [Minimal](https://github.com/blackvoidlinux/bv-website/blob/main/editions/minimal.md)
-- [Experimental](https://github.com/blackvoidlinux/bv-website/blob/main/editions/experimental.md)
+- [Contributing](https://github.com/blackvoidlinux/bv-website/blob/main/editions/CONTRIBUTING.md)
 
-### Docs
 - [Install](https://github.com/blackvoidlinux/bv-website/blob/main/docs/install.md)
 - [FAQ](https://github.com/blackvoidlinux/bv-website/blob/main/docs/faq.md)
 - [Troubleshooting](https://github.com/blackvoidlinux/bv-website/blob/main/docs/troubleshooting.md)
