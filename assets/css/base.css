@@ -1,0 +1,20 @@
+/* reset-ish and base styling */
+* { box-sizing: border-box; }
+html,body { height:100%; }
+body {
+margin:0;
+font-family: var(--system);
+background: linear-gradient(180deg, var(--bg) 0%, var(--bg-elev) 100%);
+color: var(--fg);
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+}
+img { max-width:100%; height:auto; }
+a { color: var(--accent); text-decoration: none; }
+.container { max-width: var(--max-width); margin: 0 auto; padding: 1.25rem; }
+
+
+/* small helpers */
+.button { display:inline-flex; align-items:center; gap:.5rem; padding:.45rem .7rem; border-radius:6px; background:transparent; border:1px solid rgba(255,255,255,0.06); cursor:pointer; transition:all var(--transition); }
+.button.small { padding:.25rem .5rem; font-size:.9rem; }
+.visually-hidden{ position:absolute!important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; }
