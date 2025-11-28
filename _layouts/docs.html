@@ -1,1 +1,23 @@
+---
+layout: default
+---
 
+
+<div class="bv-docs-layout">
+<aside class="bv-docs-nav">
+<!-- simple docs sidebar — generated from `site.pages` usually -->
+<h3>Documentation</h3>
+<ul>
+{% for p in site.pages %}
+{% if p.path contains 'docs/' %}
+<li><a href="{{ p.url }}">{{ p.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
+</aside>
+
+
+<section class="bv-docs-content">
+{{ content }}
+</section>
+</div>
