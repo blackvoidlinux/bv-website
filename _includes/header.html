@@ -1,1 +1,55 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title | default: site.title }}</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+
+{%- assign assets = site.baseurl | append: '/assets' -%}
+
+
+<!-- Styles (individual files so it's easy to change/replace) -->
+<link rel="stylesheet" href="{{ assets }}/css/vars.css">
+<link rel="stylesheet" href="{{ assets }}/css/base.css">
+<link rel="stylesheet" href="{{ assets }}/css/layout.css">
+<link rel="stylesheet" href="{{ assets }}/css/components.css">
+<link rel="stylesheet" href="{{ assets }}/css/theme.css">
+<link rel="stylesheet" href="{{ assets }}/css/style.css">
+
+
+<!-- Theme / runtime configuration for JS (editable from _config.yml) -->
+<script>
+window.BV_CONFIG = {
+assetsBase: '{{ site.baseurl | default: "" }}{{ "/assets" }}',
+// raw GitHub file URL (inline SVG fetch) — change if you host elsewhere
+svgIcon: 'https://raw.githubusercontent.com/blackvoidlinux/bv-artwork/main/files/icons/svg/blackvoidicon.svg',
+accent: 'rgba(161,50,54,1)'
+};
+</script>
+
+
+<!-- Small header bar with theme toggle and quick preview controls -->
+<header class="bv-header">
+<div class="bv-header-inner">
+<a class="bv-logo" href="{{ site.baseurl }}/">
+<!-- prefer inline svg or img depending on consumer choice; simple fallback -->
+<img src="{{ site.baseurl }}/assets/img/logos/template.png" alt="Black Void logo" width="36" height="36">
+</a>
+
+
+<div class="bv-controls">
+<button id="bv-theme-toggle" class="button small" aria-pressed="false" title="Toggle theme">Toggle</button>
+<div class="bv-preview-controls">
+<label for="bv-font-select">Font:</label>
+<select id="bv-font-select" aria-label="Preview font">
+<option value="system">System</option>
+<option value="Inter,system-ui">Inter</option>
+<option value="Roboto,system-ui">Roboto</option>
+<option value="Fira Code, monospace">Fira Code</option>
+</select>
+</div>
+</div>
+</div>
+</header>
+
+
+<!-- header end -->
