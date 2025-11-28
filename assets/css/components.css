@@ -1,0 +1,16 @@
+/* Cards, previews, toggles */
+.bv-card { background: var(--bg-elev); padding:1rem; border-radius: calc(var(--radius) - 2px); border:1px solid rgba(255,255,255,0.02); }
+
+
+/* Accent button style */
+.btn-accent{ background: linear-gradient(180deg, var(--accent), color-mix(in srgb, var(--accent) 80%, black 10%)); color: white; border: none; }
+
+
+/* Icon / font preview area */
+.bv-preview { display:flex; gap:1rem; align-items:center; }
+.bv-preview .icon { width:64px; height:64px; display:inline-grid; place-items:center; border-radius:8px; background:var(--glass); border:1px solid rgba(255,255,255,0.02); }
+.bv-preview .text { font-size:1.125rem; }
+
+
+/* Form like controls for live testing */
+.label-inline{ display:inline-flex; gap:.5rem; align-items:center; }
